@@ -1,0 +1,169 @@
+:root{
+    --bright-orange: #e38d0b;
+    --gray: #323030;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+body{
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+p{
+    line-height: 1.8;
+}
+.headerimg,.footerimg{
+    max-width: 300px;
+}
+img{
+    max-width: 100%;
+}
+ul{
+    list-style-type: none;
+}
+
+button{
+    user-select: none;
+}
+.ButtonCallToAction{
+    background-color: var(--bright-orange);
+    border: 2px solid var(--bright-orange);
+    color: var(--white);
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+}
+.ButtonCallToAction:hover{
+    background-color: transparent;
+    color: var(--bright-orange);
+    padding: 10px 40px;
+}
+
+
+/* SHOWCASE SECTION */
+
+.Showcase h3{
+    color: var(--bright-orange);
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+.ButtonShowcase{
+    background-color: var(--gray);
+    border: 2px solid var(--gray);
+    color: var(--white);
+    padding: 10px 20px;
+    transition: all 0.4s ease-in-out;
+}
+.ButtonShowcase:hover{
+    background-color: var(--white);
+    color: var(--gray);
+    border: 2px solid var(--gray);
+    padding: 10px 40px;
+}
+
+
+/* CARDS */
+Section-2{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.Cards .Overlay-1{
+    background: url("./images/podcast.jpg") no-repeat center/cover;
+    height: 400px;
+}
+.Cards .Overlay-1 .OverlayInner{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+}
+
+
+.Cards .Overlay-2{
+    background: url("./images/studio.jpg") no-repeat center/cover;
+    height: 400px;
+}
+.Cards .Overlay-2 .OverlayInner{
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 400px;
+}
+
+.Cards .Overlay-3{
+    background: url("./images/streaming.jpg") no-repeat center/cover;
+    height: 400px;
+}
+.Cards .Overlay-3 .OverlayInner{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 400px;
+}
+
+.Cards article h3{
+    letter-spacing: 5px;
+    font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+@media (min-width: 1280px){
+    .wrapper{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .FooterInner{
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+@media (min-width: 768px) {
+    .Section-2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        margin: 30px 0;
+    }
+    .Cards:nth-child(3){
+        grid-column: 1/3;
+    }
+    .Cards article{
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+    }
+}
+@media (min-width: 1024px){
+    .Cards .Overlay-3{
+        height: 600px;
+    }
+    .Cards .Overlay-3 .OverlayInner{
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 500px){
+    .headerimg{
+        max-width: 200px;
+    }
+}  
+@media only screen and (max-width: 400px){
+    .headerimg{
+        max-width: 150px;
+    }
+}
+@media only screen and (max-width: 350px){
+    .wrapper ul{
+        display: none;
+    }
+    .headerimg{
+        max-width: 300px;
+    }
+}
+@media only screen and (max-width: 320px){
+    .headerimg{
+        max-width: 240px;
+    }
+    .footerimg{
+        max-width: 200px;
+    }
+}

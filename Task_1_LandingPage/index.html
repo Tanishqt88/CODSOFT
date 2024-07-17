@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SampleCompanyName" />
+<!-- added tailwind -->
+    <link
+    href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
+
+<!-- google fonts (rounded) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap" rel="stylesheet">
+
+<!-- CSS files -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>SampleCompanyName</title>
+</head>
+<body>
+    <main class="wrapper">
+<!-- This Section contains header -->
+        <header class="flex items-center justify-between p-5 md:px-0">
+            <div>
+                <a href="index.html">
+                    <img src="./images/logo img.png" alt="SampleCompanyName" class="headerimg   "/>
+                </a>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li class="mx-2"><a href="#">Cameras</a></li>
+                    <li><a href="#">Microphones</a></li>
+                </ul>
+            </nav>
+            <div class="CallToAction hidden md:block">
+                <button class="ButtonCallToAction">Get In Touch</button>
+            </div>
+        </header>
+
+<!-- This section contains item Showcase/Hero Section -->
+        <section class="Showcase flex flex-col-reverse md:grid grid-cols-2 items-center bg-black md:pl-10">
+            <div class="text-white text-center md:text-left p-5">
+                <h3 class="uppercase text-2xl">Featured</h3>
+                <h1 class="font-bold text-4xl mt-10 mb-5">Sample Streaming Mic</h1>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos adipisci atque voluptate totam eos vitae!</p>
+                <button class="ButtonShowcase">Browse Microphones</button>
+            </div>
+            <div>
+                <img src="./images/hero.jpg" 
+                alt="Hero Image" 
+                class="w-full h-full"/>
+            </div>
+        </section>
+
+<!-- Section 2 --> 
+        <section class="Section-2">
+    <!-- First Card -->
+            <div class="Cards relative">
+                <div class="Overlay-1">
+                    <div class="OverlayInner"></div>
+                </div>
+                <article class="absolute bottom-10 text-center text-white p-3">
+                    <h3 class="uppercase text-3xl mb-5">Mic for Podcasts</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, temporibus?</p>
+                </article>
+            </div>
+    <!-- Second Card -->
+            <div class="Cards relative">
+                <div class="Overlay-2">
+                    <div class="OverlayInner"></div>
+                </div>
+                <article class="absolute bottom-10 text-center text-white p-3">
+                    <h3 class="uppercase text-3xl mb-5">Studio Mic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, temporibus?</p>
+                </article>
+            </div>
+    <!-- Third Card -->
+            <div class="Cards relative">
+                <div class="Overlay-3">
+                    <div class="OverlayInner"></div>
+                </div>
+                <article class="absolute bottom-10 text-center text-white p-3">
+                    <h3 class="uppercase text-3xl mb-5">Streaming mic</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, temporibus?</p>
+                </article>
+            </div>
+        </section>
+<!-- FEATURED -->
+        <section class="Featured my-10 grid grid-cols-1 gap-5 px-5 md:grid-cols-2 xl:grid-cols-3 xl:px-0">
+            <div>
+                <img src="./images/featured-1.jpg" alt="Featured" class="w-full">
+                <div class="mt-5">
+                    <h3 class="font-bold text-2xl mb-3">Camera</h3>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ut.</p>
+                    <button class="ButtonShowcase">I Want This</button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/featured-2.jpg" alt="Featured" class="w-full">
+                <div class="mt-5">
+                    <h3 class="font-bold text-2xl mb-3">Microphone</h3>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ut.</p>
+                    <button class="ButtonShowcase">I Want This</button>
+                </div>
+            </div>
+            <div>
+                <img src="./images/featured-3.jpg" alt="Featured" class="w-full">
+                <div class="mt-5">
+                    <h3 class="font-bold text-2xl mb-3">Studio accessories</h3>
+                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, ut.</p>
+                    <button class="ButtonShowcase">I Want This</button>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Extra section -->
+        <section class="px-5 pb-10 grid grid-cols-1 gap-5 md:grid-cols-2 md:items-center xl:px-0">
+            <div>
+                <img src="./images/get-yours.jpg" alt="get-yours">
+            </div>
+            <div>
+                <h3 class="font-bold text-3xl mb-3">Get Yours Today!</h3>
+                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem deleniti beatae earum officiis at a doloribus possimus odit nobis.</p>
+                <button class="ButtonShowcase">Buy</button>
+            </div>
+        </section>
+    </main>
+
+
+<!-- Footer -->
+    <footer class="Footer bg-black p-5">
+        <div class="FooterInner flex flex-col items-center justify-center text-center text-white md:flex-row md:justify-between">
+            <div>
+                <img src="./images/image.jpg" alt="Footer" class="footerimg"/>
+            </div>
+            <ul class="my-10 md:flex">
+                <li class="mb-3 md:mb-0 md:mx-3"><a href="#">Cameras</a></li>
+                <li><a href="">Microphones</a></li>
+            </ul>
+            <div>
+                <button class="ButtonCallToAction">Get In Touch</button>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
